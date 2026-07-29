@@ -1,0 +1,9 @@
+username,password,result
+standard_user,secret_sauce,success
+standard_us,secret_sauce,faillure
+problem_user,secret_sauce,success
+locked_out_user,secret_sauce,faillure
+performance_glitch_user,secret_sauce,success
+error_user,secret_sauce,success
+visual_user,secret_sauce,success
+sandy,secret_sauce,faillure

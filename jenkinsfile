@@ -1,0 +1,21 @@
+pipeline {
+    agent {
+        docker {
+            image 'cypress/base:latest'
+            args '-u=root --entrypoint='
+            }
+    }
+
+    stages {
+        stage('installation les dependances') {
+            steps {
+                sh 'npm install'
+            }
+        }
+         stage('lancement de test') {
+            steps {
+                sh 'npx run cypress'
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-07-07T10:08:20.301Z",
+    "end": "2026-07-07T10:08:54.747Z",
+    "duration": 34446,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4770d542-88ba-4a28-8489-33e0a271b155",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cartPom.cy.js",
+      "file": "cypress\\e2e\\cartPom.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "26eea99d-4c87-4a13-98e7-9cded7e276f8",
+          "title": "verfication de produit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verfier le produit ",
+              "fullTitle": "verfication de produit verfier le produit ",
+              "timedOut": null,
+              "duration": 15362,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_cartPom.default.verifyprod();\n_cartPom.default.clickContinue();\ncy.url().should('include', '/inventory.html');",
+              "err": {
+                "message": "TypeError: this.elements.shop.click is not a function",
+                "estack": "TypeError: this.elements.shop.click is not a function\n    at cartPom.clickContinue (webpack://projet-cypress/./cypress/pages/cartPom.page.js:16:27)\n    at Context.eval (webpack://projet-cypress/./cypress/e2e/cartPom.cy.js:21:16)\n    at runnable.fn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:141938:19)\n    at callFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:161016:21)\n    at Runnable.run (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:161003:7)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:167096:30)\n    at PassThroughHandlerContext.finallyHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4042:23)\n    at PassThroughHandlerContext.tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1489:31)",
+                "diff": null
+              },
+              "uuid": "f429ad2f-94a6-48b6-ad40-ed90f815d940",
+              "parentUUID": "26eea99d-4c87-4a13-98e7-9cded7e276f8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f429ad2f-94a6-48b6-ad40-ed90f815d940"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 15362,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

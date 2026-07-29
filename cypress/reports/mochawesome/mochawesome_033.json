@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-07-07T12:30:09.267Z",
+    "end": "2026-07-07T12:30:24.661Z",
+    "duration": 15394,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b13655b5-4e24-432f-ac16-47a72992f995",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cartPom.cy.js",
+      "file": "cypress\\e2e\\cartPom.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "10b00c7f-0226-45e5-b811-d79c67db3a31",
+          "title": "verfication de produit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verfier le produit ",
+              "fullTitle": "verfication de produit verfier le produit ",
+              "timedOut": null,
+              "duration": 4744,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_cartPom.default.verifyprod();\n_cartPom.default.clickContinue();\ncy.url().should('include', '/inventory.html');",
+              "err": {},
+              "uuid": "1187b176-371d-4f7d-b19e-ae2c9add0335",
+              "parentUUID": "10b00c7f-0226-45e5-b811-d79c67db3a31",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1187b176-371d-4f7d-b19e-ae2c9add0335"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4744,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

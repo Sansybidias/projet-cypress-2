@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-07-07T10:25:22.017Z",
+    "end": "2026-07-07T10:26:44.969Z",
+    "duration": 82952,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c3649387-ae22-4190-9eb6-6df255618a20",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginPom.cy.js",
+      "file": "cypress\\e2e\\loginPom.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8188e151-db0b-45fc-8bb2-41e05e28fd0a",
+          "title": "Login avec le POM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "longin with POM valide",
+              "fullTitle": "Login avec le POM longin with POM valide",
+              "timedOut": null,
+              "duration": 18807,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_loginPom.default.goLogin(\"standard_user\", \"secret_sauce\");\ncy.url().should('include', '/inventory.html');",
+              "err": {},
+              "uuid": "c3910fe8-df86-47cf-9a3c-9c093b110b6e",
+              "parentUUID": "8188e151-db0b-45fc-8bb2-41e05e28fd0a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login with POM invalide",
+              "fullTitle": "Login avec le POM login with POM invalide",
+              "timedOut": null,
+              "duration": 6225,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_loginPom.default.goLogin(\"standard_us\", \"secret_sau\");\n_loginPom.default.getErrormsg();",
+              "err": {},
+              "uuid": "9b785a21-d6d2-47ad-99c2-b8fb9c9152a5",
+              "parentUUID": "8188e151-db0b-45fc-8bb2-41e05e28fd0a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c3910fe8-df86-47cf-9a3c-9c093b110b6e",
+            "9b785a21-d6d2-47ad-99c2-b8fb9c9152a5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25032,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
