@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'cypress/included:14.5'
+            image 'cypress/included:14.5.4'
             args '-u=root --entrypoint='
             }
     }
@@ -14,7 +14,7 @@ pipeline {
         }
          stage('lancement de test') {
             steps {
-                sh 'npx run cypress'
+                sh 'npx cypress run'
             }
         }
     }
